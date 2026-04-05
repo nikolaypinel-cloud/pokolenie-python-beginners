@@ -1,1 +1,27 @@
+"""
+Шаблон для unittest (template_unittest)
+Стандартный модуль Python для тестирования.
+"""
 
+import unittest
+
+def solve(*inputs):
+    """
+    Функция-заглушка. Замени на своё решение.
+    """
+    # Твоя логика здесь
+    return None
+
+class TestSolution(unittest.TestCase):
+    """Класс с тестами."""
+    
+    def test_example(self):
+        """Пример теста."""
+        self.assertEqual(solve(5), 5)
+    
+    # Добавляй тесты как методы класса:
+    # def test_something(self):
+    #     self.assertEqual(solve(1, 2), 3)
+
+if __name__ == "__main__":
+    unittest.main()

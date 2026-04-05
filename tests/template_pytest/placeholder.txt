@@ -1,1 +1,20 @@
+"""
+Шаблон для pytest (template_pytest)
+Самый популярный фреймворк для тестирования в Python.
+Для запуска: pytest файл.py -v
+"""
 
+def solve(*inputs):
+    """
+    Функция-заглушка. Замени на своё решение.
+    """
+    # Твоя логика здесь
+    return None
+
+def test_example():
+    """Пример теста."""
+    assert solve(5) == 5
+
+# Добавляй тесты как простые функции:
+# def test_something():
+#     assert solve(1, 2) == 3

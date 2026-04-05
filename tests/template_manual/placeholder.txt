@@ -1,0 +1,41 @@
+"""
+Шаблон для ручных тестов (template_manual)
+Копируй этот файл, переименуй, замени решение и тестовые данные.
+"""
+
+def solve(input_data):
+    """
+    Функция-заглушка. Замени на своё решение.
+    input_data — кортеж входных параметров.
+    """
+    # Твоя логика здесь
+    return result
+
+def run_tests():
+    tests = [
+        # (input_data, expected_result)
+        # Пример:
+        # ((5,), 5),
+        # ((1, 2, 3), 6),
+    ]
+    
+    print("=== Запуск тестов ===\n")
+    all_passed = True
+    
+    for i, (inputs, expected) in enumerate(tests, 1):
+        result = solve(*inputs)  # Распаковка кортежа
+        passed = result == expected
+        all_passed = all_passed and passed
+        status = "✅" if passed else "❌"
+        print(f"{status} Тест {i}: {inputs} -> {result}")
+        if not passed:
+            print(f"   Ожидалось: {expected}")
+        print()
+    
+    if all_passed:
+        print("🎉 Все тесты пройдены!")
+    else:
+        print("❌ Некоторые тесты не пройдены.")
+
+if __name__ == "__main__":
+    run_tests()

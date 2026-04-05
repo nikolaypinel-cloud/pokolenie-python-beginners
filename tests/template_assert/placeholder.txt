@@ -1,1 +1,30 @@
+"""
+Шаблон для тестов с assert (template_assert)
+Короче и ближе к реальному тестированию.
+"""
 
+def solve(*inputs):
+    """
+    Функция-заглушка. Замени на своё решение.
+    """
+    # Твоя логика здесь
+    return None
+
+def test_solution():
+    """Тесты с использованием assert."""
+    tests = [
+        # (input_data, expected_result)
+        # Пример:
+        # ((5,), 5),
+        # ((1, 2, 3), 6),
+    ]
+    
+    for i, (inputs, expected) in enumerate(tests, 1):
+        result = solve(*inputs)
+        assert result == expected, f"Тест {i} провален: {inputs} -> {result}, ожидалось {expected}"
+        print(f"✅ Тест {i} пройден: {inputs} -> {result}")
+    
+    print("\n🎉 Все тесты пройдены!")
+
+if __name__ == "__main__":
+    test_solution()

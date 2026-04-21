@@ -1,0 +1,31 @@
+"""
+Тесты для задачи "Корректный email 📧"
+"""
+
+from valid_email import solve
+
+def test_valid_email():
+    tests = [
+        ("user@example.com", "YES"),
+        ("test@mail.ru", "YES"),
+        ("my.email@domain.org", "YES"),
+        ("@domain.com", "YES"),           # есть @ и .
+        ("user@.com", "YES"),             # есть @ и .
+        ("user@domain", "NO"),            # нет точки
+        ("user.domain.com", "NO"),        # нет @
+        ("user@", "NO"),                  # нет точки
+        (".com", "NO"),                   # нет @
+        ("", "NO"),
+        ("@.", "YES"),                    # минимальный случай
+        ("abc", "NO"),
+    ]
+    
+    for i, (s, expected) in enumerate(tests, 1):
+        result = solve(s)
+        assert result == expected, f"Тест {i} провален: '{s}' -> {result}, ожидалось {expected}"
+        print(f"✅ Тест {i} пройден: '{s}' -> {result}")
+    
+    print("\n🎉 Все тесты пройдены!")
+
+if __name__ == "__main__":
+    test_valid_email()

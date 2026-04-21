@@ -4,9 +4,5 @@
 """
 
 # Решение
-lengths = sorted([len(input()) for _ in range(3)])
-
-if lengths[1] - lengths[0] == lengths[2] - lengths[1]:
-    print("YES")
-else:
-    print("NO")
+a, b, c = sorted([len(input()) for _ in range(3)])
+print('YES' if b - a == c - b else 'NO')

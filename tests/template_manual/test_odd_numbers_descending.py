@@ -2,8 +2,8 @@
 Тесты для задачи "Последовательность чисел 3 🌶️"
 """
 
-import sys
-from io import StringIO
+# import sys
+# from io import StringIO
 
 def solve(m, n):
     """Возвращает список нечётных чисел от m до n в порядке убывания."""

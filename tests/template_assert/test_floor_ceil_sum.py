@@ -2,8 +2,14 @@
 Тесты для задачи "Пол и потолок"
 """
 
-from floor_ceil_sum import solve
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+from _06_math_module.floor_ceil_sum import solve
 import math
+
+# Запуск теста:
+# python -m tests.template_assert.test_floor_ceil_sum
 
 def test_floor_ceil_sum():
     tests = [

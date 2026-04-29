@@ -2,8 +2,17 @@
 Тесты для задачи "Правильный многоугольник 🔶"
 """
 
-from regular_polygon_area import solve
 import math
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+
+from _06_math_module.regular_polygon_area import solve
+
+# Запуск теста:
+# python -m tests.template_assert.test_regular_polygon_area
+
 
 def test_regular_polygon_area():
     tests = [

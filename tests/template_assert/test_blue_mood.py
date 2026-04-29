@@ -2,7 +2,15 @@
 Тесты для задачи "Цвет настроения синий 🟦"
 """
 
-from blue_mood import solve
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+
+from _05_strings.blue_mood import solve
+
+# Запуск теста:
+# python -m tests.template_assert.test_blue_mood
 
 def test_blue_mood():
     tests = [

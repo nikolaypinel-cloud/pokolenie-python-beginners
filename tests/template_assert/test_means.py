@@ -2,8 +2,15 @@
 Тесты для задачи "Средние значения"
 """
 
-from means import solve
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+from _06_math_module.means import solve
 import math
+
+# Запуск теста:
+# python -m tests.template_assert.test_means
+
 
 def test_means():
     tests = [

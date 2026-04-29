@@ -2,9 +2,14 @@
 Тесты для задачи "До КОНЦА 1"
 """
 
-from until_end import solve
 import sys
 from io import StringIO
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+from _08_while_loop.until_end import solve
+
+# Запуск теста:
+# python -m tests.template_manual.test_until_end
 
 def run_tests():
     tests = [

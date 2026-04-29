@@ -2,7 +2,12 @@
 Тесты для задачи "Знакочередующаяся сумма"
 """
 
-from alternating_sum import solve
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+
+from _07_for_loop.alternating_sum import solve
 
 def run_tests():
     tests = [
@@ -40,3 +45,6 @@ def run_tests():
 
 if __name__ == "__main__":
     run_tests()
+
+# Запуск теста:
+# python -m tests.template_assert.test_alternating_sum

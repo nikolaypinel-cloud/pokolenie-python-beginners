@@ -2,9 +2,17 @@
 Тесты для задачи "Сумма чисел"
 """
 
-from sum_of_numbers import solve
+
 import sys
 from io import StringIO
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+
+from _07_for_loop.sum_of_numbers import solve
+
+# Запуск теста:
+# python -m tests.template_manual.test_sum_of_numbers
 
 def run_tests():
     tests = [

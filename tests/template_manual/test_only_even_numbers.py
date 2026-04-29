@@ -2,7 +2,15 @@
 Тесты для задачи "Only even numbers"
 """
 
-from only_even_numbers import solve
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+
+from _07_for_loop.only_even_numbers import solve
+
+# Запуск теста:
+# python -m tests.template_manual.test_only_even_numbers
 
 def run_tests():
     tests = [

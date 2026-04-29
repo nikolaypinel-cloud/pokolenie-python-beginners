@@ -2,7 +2,12 @@
 Тесты для задачи "Количество чисел"
 """
 
-from count_cubes_ending import solve
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+
+from _07_for_loop.count_cubes_ending import solve
 
 def run_tests():
     tests = [
@@ -37,3 +42,6 @@ def run_tests():
 
 if __name__ == "__main__":
     run_tests()
+
+# Запуск теста:
+# python -m tests.template_manual.test_count_cubes_ending

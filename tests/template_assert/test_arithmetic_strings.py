@@ -2,7 +2,15 @@
 Тесты для задачи "Арифметические строки"
 """
 
-from arithmetic_strings import solve
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+
+from _05_strings.arithmetic_strings import solve
+
+# Запуск теста:
+# python -m tests.template_assert.test_arithmetic_strings
 
 def test_arithmetic_strings():
     tests = [

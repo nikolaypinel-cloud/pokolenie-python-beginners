@@ -2,8 +2,12 @@
 Тесты для задачи "До КОНЦА 2"
 """
 
-from until_end_case_insensitive import solve
 import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+
+from _08_while_loop.until_end_case_insensitive import solve
 from io import StringIO
 
 def run_tests():
@@ -46,3 +50,6 @@ def run_tests():
 
 if __name__ == "__main__":
     run_tests()
+
+# Запуск теста:
+# python -m tests.template_manual.test_until_end_case_insensitive

@@ -2,8 +2,14 @@
 Тесты для задачи "Площадь и длина"
 """
 
-from circle_area_length import solve
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+from _06_math_module.circle_area_length import solve
 import math
+
+# Запуск теста:
+# python -m tests.template_assert.test_circle_area_length
 
 def test_circle_area_length():
     tests = [

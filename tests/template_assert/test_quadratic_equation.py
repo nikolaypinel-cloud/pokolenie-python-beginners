@@ -2,8 +2,18 @@
 Тесты для задачи "Квадратное уравнение 🌶️🌶️"
 """
 
-from quadratic_equation import solve
+import sys
+
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+
+from _06_math_module.quadratic_equation import solve
+
 import math
+
+# Запуск теста:
+# python -m tests.template_assert.test_quadratic_equation
 
 def test_quadratic_equation():
     tests = [

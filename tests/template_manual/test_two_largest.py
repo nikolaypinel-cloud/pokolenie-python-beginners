@@ -2,7 +2,15 @@
 Тесты для задачи "Наибольшие числа 🌶️"
 """
 
-from two_largest import solve
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+
+from _07_for_loop.two_largest import solve
+
+# Запуск теста:
+# python -m tests.template_manual.test_two_largest
 
 def run_tests():
     tests = [

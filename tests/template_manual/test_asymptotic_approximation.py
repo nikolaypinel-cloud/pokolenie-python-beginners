@@ -2,7 +2,12 @@
 Тесты для задачи "Асимптотическое приближение 📉"
 """
 
-from asymptotic_approximation import solve
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+
+from _07_for_loop.asymptotic_approximation import solve
 import math
 
 def run_tests():
@@ -35,3 +40,6 @@ def run_tests():
 
 if __name__ == "__main__":
     run_tests()
+
+# Запуск теста:
+# python -m tests.template_manual.test_asymptotic_approximation
